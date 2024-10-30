@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import myImage from './images/myImage.jpg'; // Asegúrate de que la ruta sea correcta
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <h1>Mi Aplicación</h1>
+            <img src={myImage} alt="Descripción de la imagen" style={{ width: '100%', height: 'auto' }} />
+        </div>
+    );
+};
 
 export default App;
